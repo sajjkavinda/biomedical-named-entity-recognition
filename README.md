@@ -45,13 +45,17 @@ LoRA (Low-Rank Adaptation)
 - Parameter-efficient fine-tuning
 - Only small low-rank matrices trained
 
-# Results Summary
-Method	Performance	Efficiency
-Baseline	Very Low	High
-Prompt Tuning	Moderate	Very High
-LoRA	High	High
-Full Fine-Tuning	Highest	Low
-
 # Key finding:
 
 LoRA achieves near full fine-tuning performance while training significantly fewer parameters.
+
+# Hardware Used
+
+- Google Colab
+- NVIDIA T4 GPU (16GB VRAM)
+- PEFT methods allow training under limited GPU memory compared to full fine-tuning.
+
+# Motivation
+
+- Biomedical NER models are computationally expensive to fine-tune.
+- This project evaluates whether parameter-efficient methods can reduce computational cost while maintaining strong performance.
